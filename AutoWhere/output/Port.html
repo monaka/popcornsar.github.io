@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> AutoWhere Port Ecu Configuration</title>
+<link rel="stylesheet" href="AutoWhere_EcucEditor.css" />
+</head>
+<body>
+<div class="EcucModuleConfig" id="Port" data-shortname="Port" data-category="EcucModuleDef" data-definition="/AUTOSAR/EcucDefs/Port" >Port<input type="text" class="EcucModuleName" placeholder="Input Module Name" value="Port" /><span class="BswModuleTooltip"><u>Port</u><br><br>Definition: /AUTOSAR/EcucDefs/Port<br><br><u>Description:</u> <br>Configuration of the Port module.<br><br><u>Introduction:</u> <br>Not Defined.</span>
+<div class="EcucContConfig hidden" id="PortConfigSet">PortConfigSet&nbsp; &nbsp;[1..1]&nbsp; &nbsp;<span class="ContConfigState">0</span><input type="button" value="OPEN" class="ConfigureShowButton" />
+<div class="EcucContainer hidden" id="PortConfigSet" data-formtype="defaultform" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/Port/PortConfigSet">PortConfigSet<input type="text" class="EcucContainerName" placeholder="Input shortName" value="" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/Port/PortConfigSet"/><span class="ContainerTooltip"><b>PortConfigSet</b>&nbsp;[1..1]<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Port/PortConfigSet<br><br><u>Description:</u> <br>This container is the base of a multiple configuration set<br><br><u>Introduction:</u> <br>Not Defined.</span><input type="button" value="CLOSE" class="ParameterShowButtonSingle" />&nbsp; &nbsp;<img src="hintnotinput.png" style="display: inline" align="middle"/><div class="EcucContConfig hidden" id="PortContainer">PortContainer&nbsp; &nbsp;[1..*]&nbsp; &nbsp;<span class="ContConfigState">0</span><input type="button" value="ADD" class="AddContainer" /><input type="button" value="OPEN" class="ContainerShowButton" />
+<div class="EcucContainer hidden" id="PortContainer" data-formtype="defaultform" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer">PortContainer<input type="text" class="EcucContainerName" placeholder="Input shortName" value="" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer"/><span class="ContainerTooltip"><b>PortContainer</b>&nbsp;[1..*]<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer<br><br><u>Description:</u> <br>Container collecting the PortPins.<br><br><u>Introduction:</u> <br>Not Defined.</span><input type="button" value="CLOSE" class="ParameterShowButtonMulti" /><input type="button" value="DEL" class="DeleteButton" />&nbsp; &nbsp;<img src="hintnotinput.png" style="display: inline" align="middle"/><table class="EcucParameterValue">
+<tr class="EcucParameter">
+<td class="ParamName">PortNumberOfPortPins&nbsp;&nbsp;[1..1]</td><td class="ParamType">EcucIntegerParamDef</td><td class="ParamInput"><input type="text" class="EcucParamInputField" placeholder="Input Parameter Value" value="" id="PortNumberOfPortPins" data-category="EcucIntegerParamDef" data-definition="/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortNumberOfPortPins" data-lowermul="1" data-uppermul="1" data-defaultval="Not Defined." data-range="1..65535" /><span class="ParamTooltip"><b>PortNumberOfPortPins</b>&nbsp;[1..1]<br><br><u>Category:</u><br>EcucIntegerParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortNumberOfPortPins<br><br><u>Description:</u><br>The number of specified PortPins in this PortContainer.<br><br><u>Introduction:</u><br>Not Defined.<br><br><u>Range:</u><br>1..65535<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td><td class="ParamControl"></td>
+</tr>
+</table>
+<div class="EcucContConfig hidden" id="PortPin">PortPin&nbsp; &nbsp;[1..*]&nbsp; &nbsp;<span class="ContConfigState">0</span><input type="button" value="ADD" class="AddContainer" /><input type="button" value="OPEN" class="ContainerShowButton" />
+<div class="EcucContainer hidden" id="PortPin" data-formtype="defaultform" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin">PortPin<input type="text" class="EcucContainerName" placeholder="Input shortName" value="" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin"/><span class="ContainerTooltip"><b>PortPin</b>&nbsp;[1..*]<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin<br><br><u>Description:</u> <br>Configuration of the individual port pins.<br><br><u>Introduction:</u> <br>Not Defined.</span><input type="button" value="CLOSE" class="ParameterShowButtonMulti" /><input type="button" value="DEL" class="DeleteButton" />&nbsp; &nbsp;<img src="hintnotinput.png" style="display: inline" align="middle"/><table class="EcucParameterValue">
+<tr class="EcucParameter">
+<td class="ParamName">PortPinDirection&nbsp;&nbsp;[1..1]</td><td class="ParamType">EcucEnumerationParamDef</td><td class="ParamInput"><select class="EnumSelector" id="PortPinDirection" data-category="EcucEnumerationParamDef" data-definition="/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinDirection" data-lowermul="1" data-uppermul="1" data-defaultval="Not Defined." data-range="PORT_PIN_IN, PORT_PIN_OUT" >
+<option value=""></option>
+<option value="PORT_PIN_IN">PORT_PIN_IN</option>
+<option value="PORT_PIN_OUT">PORT_PIN_OUT</option>
+</select><span class="ParamTooltip"><b>PortPinDirection</b>&nbsp;[1..1]<br><br><u>Category:</u><br>EcucEnumerationParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinDirection<br><br><u>Description:</u><br>The initial direction of the pin (IN or OUT). If the direction is not changeable, the value configured here is fixed.<br><br><u>Introduction:</u><br>The direction must match the pin mode. E.g. a pin used for an ADC must be configured to be an in port.
+
+                                                        Implementation Type: Port_PinDirectionType<br><br><u>Range:</u><br>PORT_PIN_IN, PORT_PIN_OUT<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td>
+<td class="ParamControl"></td>
+</tr>
+<tr class="EcucParameter">
+<td class="ParamName">PortPinDirectionChangeable&nbsp;&nbsp;[1..1]</td><td class="ParamType">EcucBooleanParamDef</td><td class="ParamInput"><form class="EcucParamInputBoolean" id="PortPinDirectionChangeable" data-category="EcucBooleanParamDef" data-definition="/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinDirectionChangeable" data-lowermul="1" data-uppermul="1" data-defaultval="Not Defined." data-range="Not Defined." >
+<input type="radio" name="PortPinDirectionChangeable" value="true" />TRUE<input type="radio" name="PortPinDirectionChangeable" value="false" />FALSE</form><span class="ParamTooltip"><b>PortPinDirectionChangeable</b>&nbsp;[1..1]<br><br><u>Category:</u><br>EcucBooleanParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinDirectionChangeable<br><br><u>Description:</u><br>Parameter to indicate if the direction is changeable on a port pin during runtime.<br><br><u>Introduction:</u><br>true: Port Pin direction changeable enabled.
+                                                        false: Port Pin direction changeable disabled.<br><br><u>Range:</u><br>Not Defined.<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td><td class="ParamControl"></td>
+</tr>
+<tr class="EcucParameter">
+<td class="ParamName">PortPinId&nbsp;&nbsp;[1..1]</td><td class="ParamType">EcucIntegerParamDef</td><td class="ParamInput"><input type="text" class="EcucParamInputField" placeholder="Input Parameter Value" value="" id="PortPinId" data-category="EcucIntegerParamDef" data-definition="/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinId" data-lowermul="1" data-uppermul="1" data-defaultval="Not Defined." data-range="1..65535" /><span class="ParamTooltip"><b>PortPinId</b>&nbsp;[1..1]<br><br><u>Category:</u><br>EcucIntegerParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinId<br><br><u>Description:</u><br>Pin Id of the port pin. This value will be assigned to the symbolic name derived from the port pin container short name.<br><br><u>Introduction:</u><br>Not Defined.<br><br><u>Range:</u><br>1..65535<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td><td class="ParamControl"></td>
+</tr>
+<tr class="EcucParameter">
+<td class="ParamName">PortPinInitialMode&nbsp;&nbsp;[1..1]</td><td class="ParamType">EcucEnumerationParamDef</td><td class="ParamInput"><select class="EnumSelector" id="PortPinInitialMode" data-category="EcucEnumerationParamDef" data-definition="/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinInitialMode" data-lowermul="1" data-uppermul="1" data-defaultval="Not Defined." data-range="PORT_PIN_MODE_ADC, PORT_PIN_MODE_CAN, PORT_PIN_MODE_DIO, PORT_PIN_MODE_DIO_GPT, PORT_PIN_MODE_DIO_WDG, PORT_PIN_MODE_FLEXRAY, PORT_PIN_MODE_ICU, PORT_PIN_MODE_LIN, PORT_PIN_MODE_MEM, PORT_PIN_MODE_PWM, PORT_PIN_MODE_SPI" >
+<option value=""></option>
+<option value="PORT_PIN_MODE_ADC">PORT_PIN_MODE_ADC</option>
+<option value="PORT_PIN_MODE_CAN">PORT_PIN_MODE_CAN</option>
+<option value="PORT_PIN_MODE_DIO">PORT_PIN_MODE_DIO</option>
+<option value="PORT_PIN_MODE_DIO_GPT">PORT_PIN_MODE_DIO_GPT</option>
+<option value="PORT_PIN_MODE_DIO_WDG">PORT_PIN_MODE_DIO_WDG</option>
+<option value="PORT_PIN_MODE_FLEXRAY">PORT_PIN_MODE_FLEXRAY</option>
+<option value="PORT_PIN_MODE_ICU">PORT_PIN_MODE_ICU</option>
+<option value="PORT_PIN_MODE_LIN">PORT_PIN_MODE_LIN</option>
+<option value="PORT_PIN_MODE_MEM">PORT_PIN_MODE_MEM</option>
+<option value="PORT_PIN_MODE_PWM">PORT_PIN_MODE_PWM</option>
+<option value="PORT_PIN_MODE_SPI">PORT_PIN_MODE_SPI</option>
+</select><span class="ParamTooltip"><b>PortPinInitialMode</b>&nbsp;[1..1]<br><br><u>Category:</u><br>EcucEnumerationParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinInitialMode<br><br><u>Description:</u><br>Port pin mode from mode list for use with Port_Init() function.<br><br><u>Introduction:</u><br>Not Defined.<br><br><u>Range:</u><br>PORT_PIN_MODE_ADC, PORT_PIN_MODE_CAN, PORT_PIN_MODE_DIO, PORT_PIN_MODE_DIO_GPT, PORT_PIN_MODE_DIO_WDG, PORT_PIN_MODE_FLEXRAY, PORT_PIN_MODE_ICU, PORT_PIN_MODE_LIN, PORT_PIN_MODE_MEM, PORT_PIN_MODE_PWM, PORT_PIN_MODE_SPI<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td>
+<td class="ParamControl"></td>
+</tr>
+<tr class="EcucParameter">
+<td class="ParamName">PortPinLevelValue&nbsp;&nbsp;[1..1]</td><td class="ParamType">EcucEnumerationParamDef</td><td class="ParamInput"><select class="EnumSelector" id="PortPinLevelValue" data-category="EcucEnumerationParamDef" data-definition="/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinLevelValue" data-lowermul="1" data-uppermul="1" data-defaultval="Not Defined." data-range="PORT_PIN_LEVEL_HIGH, PORT_PIN_LEVEL_LOW" >
+<option value=""></option>
+<option value="PORT_PIN_LEVEL_HIGH">PORT_PIN_LEVEL_HIGH</option>
+<option value="PORT_PIN_LEVEL_LOW">PORT_PIN_LEVEL_LOW</option>
+</select><span class="ParamTooltip"><b>PortPinLevelValue</b>&nbsp;[1..1]<br><br><u>Category:</u><br>EcucEnumerationParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinLevelValue<br><br><u>Description:</u><br>Port Pin Level value from Port pin list.<br><br><u>Introduction:</u><br>Not Defined.<br><br><u>Range:</u><br>PORT_PIN_LEVEL_HIGH, PORT_PIN_LEVEL_LOW<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td>
+<td class="ParamControl"></td>
+</tr>
+<tr class="EcucParameter">
+<td class="ParamName">PortPinMode&nbsp;&nbsp;[1..*]</td><td class="ParamType">EcucEnumerationParamDef</td><td class="ParamInput"><select class="EnumSelector" id="PortPinMode" data-category="EcucEnumerationParamDef" data-definition="/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinMode" data-lowermul="1" data-uppermul="1" data-defaultval="Not Defined." data-range="PORT_PIN_MODE_ADC, PORT_PIN_MODE_CAN, PORT_PIN_MODE_DIO, PORT_PIN_MODE_DIO_GPT, PORT_PIN_MODE_DIO_WDG, PORT_PIN_MODE_FLEXRAY, PORT_PIN_MODE_ICU, PORT_PIN_MODE_LIN, PORT_PIN_MODE_MEM, PORT_PIN_MODE_PWM, PORT_PIN_MODE_SPI" >
+<option value=""></option>
+<option value="PORT_PIN_MODE_ADC">PORT_PIN_MODE_ADC</option>
+<option value="PORT_PIN_MODE_CAN">PORT_PIN_MODE_CAN</option>
+<option value="PORT_PIN_MODE_DIO">PORT_PIN_MODE_DIO</option>
+<option value="PORT_PIN_MODE_DIO_GPT">PORT_PIN_MODE_DIO_GPT</option>
+<option value="PORT_PIN_MODE_DIO_WDG">PORT_PIN_MODE_DIO_WDG</option>
+<option value="PORT_PIN_MODE_FLEXRAY">PORT_PIN_MODE_FLEXRAY</option>
+<option value="PORT_PIN_MODE_ICU">PORT_PIN_MODE_ICU</option>
+<option value="PORT_PIN_MODE_LIN">PORT_PIN_MODE_LIN</option>
+<option value="PORT_PIN_MODE_MEM">PORT_PIN_MODE_MEM</option>
+<option value="PORT_PIN_MODE_PWM">PORT_PIN_MODE_PWM</option>
+<option value="PORT_PIN_MODE_SPI">PORT_PIN_MODE_SPI</option>
+</select><span class="ParamTooltip"><b>PortPinMode</b>&nbsp;[1..*]<br><br><u>Category:</u><br>EcucEnumerationParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinMode<br><br><u>Description:</u><br>Port pin mode from mode list.<br><br><u>Introduction:</u><br>Note that more than one mode is allowed by default. That way it is e.g. possible to combine DIO with another mode such as ICU.<br><br><u>Range:</u><br>PORT_PIN_MODE_ADC, PORT_PIN_MODE_CAN, PORT_PIN_MODE_DIO, PORT_PIN_MODE_DIO_GPT, PORT_PIN_MODE_DIO_WDG, PORT_PIN_MODE_FLEXRAY, PORT_PIN_MODE_ICU, PORT_PIN_MODE_LIN, PORT_PIN_MODE_MEM, PORT_PIN_MODE_PWM, PORT_PIN_MODE_SPI<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td>
+<td class="ParamControl"></td>
+</tr>
+<tr class="EcucParameter">
+<td class="ParamName">PortPinModeChangeable&nbsp;&nbsp;[1..1]</td><td class="ParamType">EcucBooleanParamDef</td><td class="ParamInput"><form class="EcucParamInputBoolean" id="PortPinModeChangeable" data-category="EcucBooleanParamDef" data-definition="/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinModeChangeable" data-lowermul="1" data-uppermul="1" data-defaultval="Not Defined." data-range="Not Defined." >
+<input type="radio" name="PortPinModeChangeable" value="true" />TRUE<input type="radio" name="PortPinModeChangeable" value="false" />FALSE</form><span class="ParamTooltip"><b>PortPinModeChangeable</b>&nbsp;[1..1]<br><br><u>Category:</u><br>EcucBooleanParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinModeChangeable<br><br><u>Description:</u><br>Parameter to indicate if the mode is changeable on a port pin during runtime. True: Port Pin mode changeable allowed. False: Port Pin mode changeable not permitted.<br><br><u>Introduction:</u><br>Not Defined.<br><br><u>Range:</u><br>Not Defined.<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td><td class="ParamControl"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="EcucContConfig hidden" id="PortGeneral">PortGeneral&nbsp; &nbsp;[1..1]&nbsp; &nbsp;<span class="ContConfigState">0</span><input type="button" value="OPEN" class="ConfigureShowButton" />
+<div class="EcucContainer hidden" id="PortGeneral" data-formtype="defaultform" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/Port/PortGeneral">PortGeneral<input type="text" class="EcucContainerName" placeholder="Input shortName" value="" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/Port/PortGeneral"/><span class="ContainerTooltip"><b>PortGeneral</b>&nbsp;[1..1]<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Port/PortGeneral<br><br><u>Description:</u> <br>Module wide configuration parameters of the PORT driver.<br><br><u>Introduction:</u> <br>Not Defined.</span><input type="button" value="CLOSE" class="ParameterShowButtonSingle" />&nbsp; &nbsp;<img src="hintnotinput.png" style="display: inline" align="middle"/><table class="EcucParameterValue">
+<tr class="EcucParameter">
+<td class="ParamName">PortDevErrorDetect&nbsp;&nbsp;[1..1]</td><td class="ParamType">EcucBooleanParamDef</td><td class="ParamInput"><form class="EcucParamInputBoolean" id="PortDevErrorDetect" data-category="EcucBooleanParamDef" data-definition="/AUTOSAR/EcucDefs/Port/PortGeneral/PortDevErrorDetect" data-lowermul="1" data-uppermul="1" data-defaultval="Not Defined." data-range="Not Defined." >
+<input type="radio" name="PortDevErrorDetect" value="true" />TRUE<input type="radio" name="PortDevErrorDetect" value="false" />FALSE</form><span class="ParamTooltip"><b>PortDevErrorDetect</b>&nbsp;[1..1]<br><br><u>Category:</u><br>EcucBooleanParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Port/PortGeneral/PortDevErrorDetect<br><br><u>Description:</u><br>Switches the Development Error Detection and Notification on or off.<br><br><u>Introduction:</u><br>true: Enabled.
+                                        false: Disabled.<br><br><u>Range:</u><br>Not Defined.<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td><td class="ParamControl"></td>
+</tr>
+<tr class="EcucParameter">
+<td class="ParamName">PortSetPinDirectionApi&nbsp;&nbsp;[1..1]</td><td class="ParamType">EcucBooleanParamDef</td><td class="ParamInput"><form class="EcucParamInputBoolean" id="PortSetPinDirectionApi" data-category="EcucBooleanParamDef" data-definition="/AUTOSAR/EcucDefs/Port/PortGeneral/PortSetPinDirectionApi" data-lowermul="1" data-uppermul="1" data-defaultval="Not Defined." data-range="Not Defined." >
+<input type="radio" name="PortSetPinDirectionApi" value="true" />TRUE<input type="radio" name="PortSetPinDirectionApi" value="false" />FALSE</form><span class="ParamTooltip"><b>PortSetPinDirectionApi</b>&nbsp;[1..1]<br><br><u>Category:</u><br>EcucBooleanParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Port/PortGeneral/PortSetPinDirectionApi<br><br><u>Description:</u><br>Pre-processor switch to enable / disable the use of the function Port_SetPinDirection().<br><br><u>Introduction:</u><br>TRUE: Enabled - Function Port_SetPinDirection() is available.
+                                        FALSE: Disabled - Function Port_SetPinDirection() is not available.<br><br><u>Range:</u><br>Not Defined.<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td><td class="ParamControl"></td>
+</tr>
+<tr class="EcucParameter">
+<td class="ParamName">PortSetPinModeApi&nbsp;&nbsp;[1..1]</td><td class="ParamType">EcucBooleanParamDef</td><td class="ParamInput"><form class="EcucParamInputBoolean" id="PortSetPinModeApi" data-category="EcucBooleanParamDef" data-definition="/AUTOSAR/EcucDefs/Port/PortGeneral/PortSetPinModeApi" data-lowermul="1" data-uppermul="1" data-defaultval="Not Defined." data-range="Not Defined." >
+<input type="radio" name="PortSetPinModeApi" value="true" />TRUE<input type="radio" name="PortSetPinModeApi" value="false" />FALSE</form><span class="ParamTooltip"><b>PortSetPinModeApi</b>&nbsp;[1..1]<br><br><u>Category:</u><br>EcucBooleanParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Port/PortGeneral/PortSetPinModeApi<br><br><u>Description:</u><br>Pre-processor switch to enable / disable the use of the function Port_SetPinMode().<br><br><u>Introduction:</u><br>true: Enabled - Function Port_SetPinMode() is available.
+                                        false: Disabled - Function Port_SetPinMode() is not available.<br><br><u>Range:</u><br>Not Defined.<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td><td class="ParamControl"></td>
+</tr>
+<tr class="EcucParameter">
+<td class="ParamName">PortVersionInfoApi&nbsp;&nbsp;[1..1]</td><td class="ParamType">EcucBooleanParamDef</td><td class="ParamInput"><form class="EcucParamInputBoolean" id="PortVersionInfoApi" data-category="EcucBooleanParamDef" data-definition="/AUTOSAR/EcucDefs/Port/PortGeneral/PortVersionInfoApi" data-lowermul="1" data-uppermul="1" data-defaultval="Not Defined." data-range="Not Defined." >
+<input type="radio" name="PortVersionInfoApi" value="true" />TRUE<input type="radio" name="PortVersionInfoApi" value="false" />FALSE</form><span class="ParamTooltip"><b>PortVersionInfoApi</b>&nbsp;[1..1]<br><br><u>Category:</u><br>EcucBooleanParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Port/PortGeneral/PortVersionInfoApi<br><br><u>Description:</u><br>Pre-processor switch to enable / disable the API to read out the modules version information.<br><br><u>Introduction:</u><br>true: Version info API enabled.
+                                        false: Version info API disabled.<br><br><u>Range:</u><br>Not Defined.<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td><td class="ParamControl"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="EcucController"><form id="Controller">
+<input type="button" class="HomeButton" value="HOME" onclick="location.href='AutoWhere_BswList.html'"/><br><input type="submit" class="SaveButton" value="SAVE"/>
+</form></div><div id="JsonResult"></div><script src="jquery-1.12.1.js"></script><script src="AutoWhere_EcucEditor.js"></script><script src="AutoWhere_EcucUserInput.js"></script></body>
+</html>

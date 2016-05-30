@@ -1,0 +1,306 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+
+body {
+    font-size: 10pt;
+    font-family: "Titillium Web";
+}
+
+div {
+    border: 1px #000000 solid;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    padding-top: 20px;
+    align-content: center;
+}
+
+li {
+    border: 1px #000000 solid;
+    margin-bottom: 5px;
+    text-decoration: none;
+    height: auto;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.DeleteButton, .DeleteModuleButton {
+    vertical-align: middle;
+    padding: 5px 10px 5px !important;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 10px;
+    background-color: orange;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.ModuleShowButton, .ConfigureShowButton, .ContainerShowButton,
+.ParameterShowButtonMulti, .ParameterShowButtonSingle,
+.ChoiceShowButtonSingle, .ChoiceShowButtonMulti,
+.AddContainer, .AddChoiceContainer,
+.RefButton {
+    vertical-align: middle;
+    padding: 5px 10px 5px !important;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    background-color: white;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: black;
+}
+
+td {
+    padding-left: 20px;
+}
+
+.ParamName {
+    word-break: break-all;
+    background-color: white;
+    color: black;
+    width: 15%;
+    height: auto;
+}
+
+.ParamMul {
+    word-break: break-all;
+    background-color: white;
+    color: black;
+    width: 5%;
+    height: auto;
+}
+
+.ParamType {
+    word-break: break-all;
+    background-color: white;
+    color: black;
+    width: 10%;
+    height: auto;
+}
+
+.ParamInput {
+    word-break: break-all;
+    background-color: white;
+    color: black;
+    width: 25%;
+    height: auto;
+}
+
+.ParamControl {
+    word-break: break-all;
+    background-color: white;
+    color: black;
+    width: auto;
+    height: auto;
+}
+
+.EcucParamInputField, .EcucParamMultilineStr {
+    vertical-align: middle;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+    margin: 5px;
+    border-radius: 3px;
+    width: 60%;
+}
+
+.EcucRefInputField {
+    vertical-align: middle;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+    margin: 5px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.EcucModuleName {
+    vertical-align: middle;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+    margin-left: 20px;
+    border-radius: 3px;
+    width: 10%;
+}
+
+.EcucContainerName {
+    vertical-align: middle;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+    margin-left: 20px;
+    border-radius: 3px;
+    width: 25%;
+}
+
+.AddEcucContainerName {
+    vertical-align: middle;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+    margin-left: 20px;
+    border-radius: 3px;
+    width: 25%;
+}
+
+.EcucEnumerationParamDef {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.EcucModuleConfig {
+    /*width: 70%;*/
+    padding-left: 10px;
+    background-color: #34495E;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.EcucContConfig {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    background-color: white;
+    color: black;
+    /*background-color: #3498DB;*/
+    /*color: white;*/
+}
+
+.EcucChoiceContConfig {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    background-color: white;
+    color: black;
+    /*background-color: #34495E;*/
+    /*color: white;*/
+}
+
+.EcucContainer {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    background-color: white;
+    color: black;
+    /*background-color: #1ABC9C;*/
+    /*color: white;*/
+}
+
+.EcucChoiceContainer {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    background-color: white;
+    color: black;
+    border: none;
+    /*background-color: #1ABC9C;*/
+    /*color: white;*/
+}
+
+.SelectChoiceContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+
+    /*background-color: #1ABC9C;*/
+    /*color: white;*/
+}
+
+#default {
+    display: none;
+}
+
+.Buttons {
+    border: none;
+    background-color: royalblue;
+}
+
+.EnumSelector {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+    margin: 5px;
+}
+
+.EcucParamInputBoolean {
+    margin: 5px;
+    float: left;
+}
+
+.ContainerTooltip, .ChoiceContainerTooltip, .ParamTooltip, .RefTooltip, .BswModuleTooltip {
+    line-height: 1.5;
+    background-color: white;
+    color: black;
+    width: 25%;
+    border: 1px solid black;
+    padding: 1em;
+    font-size: small;
+}
+
+.ContConfigState {
+    font-family: Consolas;
+    background-color: coral;
+    color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.EcucController {
+    position: fixed;
+    /*width: 10%;*/
+    right: 0px;
+    top: 10%;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: slategray;
+}
+
+.SaveButton, .HomeButton, .ValidButton {
+    vertical-align: middle;
+    padding: 5px 10px 5px !important;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    width: 120px;
+}
+
+img {
+    margin-left: 5px;
+}

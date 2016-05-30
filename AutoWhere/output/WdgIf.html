@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> AutoWhere WdgIf Ecu Configuration</title>
+<link rel="stylesheet" href="AutoWhere_EcucEditor.css" />
+</head>
+<body>
+<div class="EcucModuleConfig" id="WdgIf" data-shortname="WdgIf" data-category="EcucModuleDef" data-definition="/AUTOSAR/EcucDefs/WdgIf" >WdgIf<input type="text" class="EcucModuleName" placeholder="Input Module Name" value="WdgIf" /><span class="BswModuleTooltip"><u>WdgIf</u><br><br>Definition: /AUTOSAR/EcucDefs/WdgIf<br><br><u>Description:</u> <br>Configuration of the WdgIf (Watchdog Interface) module.<br><br><u>Introduction:</u> <br>Not Defined.</span>
+<div class="EcucContConfig hidden" id="WdgIfDevice">WdgIfDevice&nbsp; &nbsp;[1..*]&nbsp; &nbsp;<span class="ContConfigState">0</span><input type="button" value="ADD" class="AddContainer" /><input type="button" value="OPEN" class="ContainerShowButton" />
+<div class="EcucContainer hidden" id="WdgIfDevice" data-formtype="defaultform" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/WdgIf/WdgIfDevice">WdgIfDevice<input type="text" class="EcucContainerName" placeholder="Input shortName" value="" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/WdgIf/WdgIfDevice"/><span class="ContainerTooltip"><b>WdgIfDevice</b>&nbsp;[1..*]<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/WdgIf/WdgIfDevice<br><br><u>Description:</u> <br>It contains the information for the selection of a particular Watchdog device in case multiple Watchdog drivers are connected.<br><br><u>Introduction:</u> <br>Not Defined.</span><input type="button" value="CLOSE" class="ParameterShowButtonMulti" /><input type="button" value="DEL" class="DeleteButton" />&nbsp; &nbsp;<img src="hintnotinput.png" style="display: inline" align="middle"/><table class="EcucParameterValue">
+<tr class="EcucParameter">
+<td class="ParamName">WdgIfDeviceIndex&nbsp;&nbsp;[1..1]</td><td class="ParamType">EcucIntegerParamDef</td><td class="ParamInput"><input type="text" class="EcucParamInputField" placeholder="Input Parameter Value" value="" id="WdgIfDeviceIndex" data-category="EcucIntegerParamDef" data-definition="/AUTOSAR/EcucDefs/WdgIf/WdgIfDevice/WdgIfDeviceIndex" data-lowermul="1" data-uppermul="1" data-defaultval="Not Defined." data-range="0..255" /><span class="ParamTooltip"><b>WdgIfDeviceIndex</b>&nbsp;[1..1]<br><br><u>Category:</u><br>EcucIntegerParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/WdgIf/WdgIfDevice/WdgIfDeviceIndex<br><br><u>Description:</u><br>Represents the watchdog interface ID so that it can be referenced by the watchdog manager.<br><br><u>Introduction:</u><br>Not Defined.<br><br><u>Range:</u><br>0..255<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td><td class="ParamControl"></td>
+</tr>
+</table>
+<table class="EcucReferenceValue">
+<tr class="EcucReference">
+<td class="ParamName">WdgIfDriverRef&nbsp;&nbsp;[1..1]</td><td class="ParamType">EcucReferenceDef</td><td class="ParamInput"><input type="text" class="EcucRefInputField" placeholder="Input Parameter Value" value=""  id="WdgIfDriverRef" data-category="EcucReferenceDef" data-destination="/AUTOSAR/EcucDefs/Wdg/WdgGeneral" data-definition="/AUTOSAR/EcucDefs/WdgIf/WdgIfDevice/WdgIfDriverRef"data-lowermul="1" data-uppermul="1" /><span class="RefTooltip"><b>WdgIfDriverRef</b>&nbsp;[1..1]<br><br><u>Category:</u><br>EcucReferenceDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/WdgIf/WdgIfDevice/WdgIfDriverRef<br><br><u>Destination:</u><br>/AUTOSAR/EcucDefs/Wdg/WdgGeneral<br><br><u>Description:</u> <br>Reference to the watchdog drivers that are controlled by the watchdog interface.<br><br><u>Introduction:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span></td><td class="ParamControl"><input type="button" value="REF" class="RefButton" /></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="EcucContConfig hidden" id="WdgIfGeneral">WdgIfGeneral&nbsp; &nbsp;[1..1]&nbsp; &nbsp;<span class="ContConfigState">0</span><input type="button" value="OPEN" class="ConfigureShowButton" />
+<div class="EcucContainer hidden" id="WdgIfGeneral" data-formtype="defaultform" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/WdgIf/WdgIfGeneral">WdgIfGeneral<input type="text" class="EcucContainerName" placeholder="Input shortName" value="" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/WdgIf/WdgIfGeneral"/><span class="ContainerTooltip"><b>WdgIfGeneral</b>&nbsp;[1..1]<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/WdgIf/WdgIfGeneral<br><br><u>Description:</u> <br>This container collects all generic watchdog interface parameters.<br><br><u>Introduction:</u> <br>Not Defined.</span><input type="button" value="CLOSE" class="ParameterShowButtonSingle" />&nbsp; &nbsp;<img src="hintnotinput.png" style="display: inline" align="middle"/><table class="EcucParameterValue">
+<tr class="EcucParameter">
+<td class="ParamName">WdgIfDevErrorDetect&nbsp;&nbsp;[1..1]</td><td class="ParamType">EcucBooleanParamDef</td><td class="ParamInput"><form class="EcucParamInputBoolean" id="WdgIfDevErrorDetect" data-category="EcucBooleanParamDef" data-definition="/AUTOSAR/EcucDefs/WdgIf/WdgIfGeneral/WdgIfDevErrorDetect" data-lowermul="1" data-uppermul="1" data-defaultval="Not Defined." data-range="Not Defined." >
+<input type="radio" name="WdgIfDevErrorDetect" value="true" />TRUE<input type="radio" name="WdgIfDevErrorDetect" value="false" />FALSE</form><span class="ParamTooltip"><b>WdgIfDevErrorDetect</b>&nbsp;[1..1]<br><br><u>Category:</u><br>EcucBooleanParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/WdgIf/WdgIfGeneral/WdgIfDevErrorDetect<br><br><u>Description:</u><br>Pre-processor switch for enabling the development error detection and reporting.<br><br><u>Introduction:</u><br>true: Development error detection enabled
+                                        false: Development error detection disabled<br><br><u>Range:</u><br>Not Defined.<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td><td class="ParamControl"></td>
+</tr>
+<tr class="EcucParameter">
+<td class="ParamName">WdgIfVersionInfoApi&nbsp;&nbsp;[1..1]</td><td class="ParamType">EcucBooleanParamDef</td><td class="ParamInput"><form class="EcucParamInputBoolean" id="WdgIfVersionInfoApi" data-category="EcucBooleanParamDef" data-definition="/AUTOSAR/EcucDefs/WdgIf/WdgIfGeneral/WdgIfVersionInfoApi" data-lowermul="1" data-uppermul="1" data-defaultval="Not Defined." data-range="Not Defined." >
+<input type="radio" name="WdgIfVersionInfoApi" value="true" />TRUE<input type="radio" name="WdgIfVersionInfoApi" value="false" />FALSE</form><span class="ParamTooltip"><b>WdgIfVersionInfoApi</b>&nbsp;[1..1]<br><br><u>Category:</u><br>EcucBooleanParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/WdgIf/WdgIfGeneral/WdgIfVersionInfoApi<br><br><u>Description:</u><br>Pre-processor switch to enable / disable the service returning the version information.<br><br><u>Introduction:</u><br>true: Version information service enabled
+                                        false: Version information service disabled<br><br><u>Range:</u><br>Not Defined.<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td><td class="ParamControl"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="EcucController"><form id="Controller">
+<input type="button" class="HomeButton" value="HOME" onclick="location.href='AutoWhere_BswList.html'"/><br><input type="submit" class="SaveButton" value="SAVE"/>
+</form></div><div id="JsonResult"></div><script src="jquery-1.12.1.js"></script><script src="AutoWhere_EcucEditor.js"></script><script src="AutoWhere_EcucUserInput.js"></script></body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> AutoWhere Crc Ecu Configuration</title>
+<link rel="stylesheet" href="AutoWhere_EcucEditor.css" />
+</head>
+<body>
+<div class="EcucModuleConfig" id="Crc" data-shortname="Crc" data-category="EcucModuleDef" data-definition="/AUTOSAR/EcucDefs/Crc" >Crc<input type="text" class="EcucModuleName" placeholder="Input Module Name" value="Crc" /><span class="BswModuleTooltip"><u>Crc</u><br><br>Definition: /AUTOSAR/EcucDefs/Crc<br><br><u>Description:</u> <br>Configuration of the Crc (Crc routines) module.<br><br><u>Introduction:</u> <br>Not Defined.</span>
+<div class="EcucContConfig hidden" id="CrcGeneral">CrcGeneral&nbsp; &nbsp;[1..1]&nbsp; &nbsp;<span class="ContConfigState">0</span><input type="button" value="OPEN" class="ConfigureShowButton" />
+<div class="EcucContainer hidden" id="CrcGeneral" data-formtype="defaultform" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/Crc/CrcGeneral">CrcGeneral<input type="text" class="EcucContainerName" placeholder="Input shortName" value="" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/Crc/CrcGeneral"/><span class="ContainerTooltip"><b>CrcGeneral</b>&nbsp;[1..1]<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Crc/CrcGeneral<br><br><u>Description:</u> <br>General configuration of CRC module<br><br><u>Introduction:</u> <br>Not Defined.</span><input type="button" value="CLOSE" class="ParameterShowButtonSingle" />&nbsp; &nbsp;<img src="hintnotinput.png" style="display: inline" align="middle"/><table class="EcucParameterValue">
+<tr class="EcucParameter">
+<td class="ParamName">Crc16Mode&nbsp;&nbsp;[0..1]</td><td class="ParamType">EcucEnumerationParamDef</td><td class="ParamInput"><select class="EnumSelector" id="Crc16Mode" data-category="EcucEnumerationParamDef" data-definition="/AUTOSAR/EcucDefs/Crc/CrcGeneral/Crc16Mode" data-lowermul="0" data-uppermul="0" data-defaultval="Not Defined." data-range="CRC_16_HARDWARE, CRC_16_RUNTIME, CRC_16_TABLE" >
+<option value=""></option>
+<option value="CRC_16_HARDWARE">CRC_16_HARDWARE</option>
+<option value="CRC_16_RUNTIME">CRC_16_RUNTIME</option>
+<option value="CRC_16_TABLE">CRC_16_TABLE</option>
+</select><span class="ParamTooltip"><b>Crc16Mode</b>&nbsp;[0..1]<br><br><u>Category:</u><br>EcucEnumerationParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Crc/CrcGeneral/Crc16Mode<br><br><u>Description:</u><br>Switch to select one of the available CRC 16-bit (CCITT) calculation methods<br><br><u>Introduction:</u><br>Not Defined.<br><br><u>Range:</u><br>CRC_16_HARDWARE, CRC_16_RUNTIME, CRC_16_TABLE<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td>
+<td class="ParamControl"></td>
+</tr>
+<tr class="EcucParameter">
+<td class="ParamName">Crc32Mode&nbsp;&nbsp;[0..1]</td><td class="ParamType">EcucEnumerationParamDef</td><td class="ParamInput"><select class="EnumSelector" id="Crc32Mode" data-category="EcucEnumerationParamDef" data-definition="/AUTOSAR/EcucDefs/Crc/CrcGeneral/Crc32Mode" data-lowermul="0" data-uppermul="0" data-defaultval="Not Defined." data-range="CRC_32_HARDWARE, CRC_32_RUNTIME, CRC_32_TABLE" >
+<option value=""></option>
+<option value="CRC_32_HARDWARE">CRC_32_HARDWARE</option>
+<option value="CRC_32_RUNTIME">CRC_32_RUNTIME</option>
+<option value="CRC_32_TABLE">CRC_32_TABLE</option>
+</select><span class="ParamTooltip"><b>Crc32Mode</b>&nbsp;[0..1]<br><br><u>Category:</u><br>EcucEnumerationParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Crc/CrcGeneral/Crc32Mode<br><br><u>Description:</u><br>Switch to select one of the available CRC 32-bit (IEEE-802.3 CRC32 Ethernet Standard) calculation methods<br><br><u>Introduction:</u><br>Not Defined.<br><br><u>Range:</u><br>CRC_32_HARDWARE, CRC_32_RUNTIME, CRC_32_TABLE<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td>
+<td class="ParamControl"></td>
+</tr>
+<tr class="EcucParameter">
+<td class="ParamName">Crc8H2FMode&nbsp;&nbsp;[0..1]</td><td class="ParamType">EcucEnumerationParamDef</td><td class="ParamInput"><select class="EnumSelector" id="Crc8H2FMode" data-category="EcucEnumerationParamDef" data-definition="/AUTOSAR/EcucDefs/Crc/CrcGeneral/Crc8H2FMode" data-lowermul="0" data-uppermul="0" data-defaultval="Not Defined." data-range="CRC_8H2F_HARDWARE, CRC_8H2F_RUNTIME, CRC_8H2F_TABLE" >
+<option value=""></option>
+<option value="CRC_8H2F_HARDWARE">CRC_8H2F_HARDWARE</option>
+<option value="CRC_8H2F_RUNTIME">CRC_8H2F_RUNTIME</option>
+<option value="CRC_8H2F_TABLE">CRC_8H2F_TABLE</option>
+</select><span class="ParamTooltip"><b>Crc8H2FMode</b>&nbsp;[0..1]<br><br><u>Category:</u><br>EcucEnumerationParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Crc/CrcGeneral/Crc8H2FMode<br><br><u>Description:</u><br>Switch to select one of the available CRC 8-bit (2Fh polynomial) calculation methods<br><br><u>Introduction:</u><br>Not Defined.<br><br><u>Range:</u><br>CRC_8H2F_HARDWARE, CRC_8H2F_RUNTIME, CRC_8H2F_TABLE<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td>
+<td class="ParamControl"></td>
+</tr>
+<tr class="EcucParameter">
+<td class="ParamName">Crc8Mode&nbsp;&nbsp;[0..1]</td><td class="ParamType">EcucEnumerationParamDef</td><td class="ParamInput"><select class="EnumSelector" id="Crc8Mode" data-category="EcucEnumerationParamDef" data-definition="/AUTOSAR/EcucDefs/Crc/CrcGeneral/Crc8Mode" data-lowermul="0" data-uppermul="0" data-defaultval="Not Defined." data-range="CRC_8_HARDWARE, CRC_8_RUNTIME, CRC_8_TABLE" >
+<option value=""></option>
+<option value="CRC_8_HARDWARE">CRC_8_HARDWARE</option>
+<option value="CRC_8_RUNTIME">CRC_8_RUNTIME</option>
+<option value="CRC_8_TABLE">CRC_8_TABLE</option>
+</select><span class="ParamTooltip"><b>Crc8Mode</b>&nbsp;[0..1]<br><br><u>Category:</u><br>EcucEnumerationParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Crc/CrcGeneral/Crc8Mode<br><br><u>Description:</u><br>Switch to select one of the available CRC 8-bit (SAE J1850) calculation methods<br><br><u>Introduction:</u><br>Not Defined.<br><br><u>Range:</u><br>CRC_8_HARDWARE, CRC_8_RUNTIME, CRC_8_TABLE<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td>
+<td class="ParamControl"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="EcucController"><form id="Controller">
+<input type="button" class="HomeButton" value="HOME" onclick="location.href='AutoWhere_BswList.html'"/><br><input type="submit" class="SaveButton" value="SAVE"/>
+</form></div><div id="JsonResult"></div><script src="jquery-1.12.1.js"></script><script src="AutoWhere_EcucEditor.js"></script><script src="AutoWhere_EcucUserInput.js"></script></body>
+</html>

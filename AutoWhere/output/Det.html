@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> AutoWhere Det Ecu Configuration</title>
+<link rel="stylesheet" href="AutoWhere_EcucEditor.css" />
+</head>
+<body>
+<div class="EcucModuleConfig" id="Det" data-shortname="Det" data-category="EcucModuleDef" data-definition="/AUTOSAR/EcucDefs/Det" >Det<input type="text" class="EcucModuleName" placeholder="Input Module Name" value="Det" /><span class="BswModuleTooltip"><u>Det</u><br><br>Definition: /AUTOSAR/EcucDefs/Det<br><br><u>Description:</u> <br>Det configuration includes the functions to be called at notification. On one<br><br><u>Introduction:</u> <br>Not Defined.</span>
+<div class="EcucContConfig hidden" id="DetGeneral">DetGeneral&nbsp; &nbsp;[1..1]&nbsp; &nbsp;<span class="ContConfigState">0</span><input type="button" value="OPEN" class="ConfigureShowButton" />
+<div class="EcucContainer hidden" id="DetGeneral" data-formtype="defaultform" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/Det/DetGeneral">DetGeneral<input type="text" class="EcucContainerName" placeholder="Input shortName" value="" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/Det/DetGeneral"/><span class="ContainerTooltip"><b>DetGeneral</b>&nbsp;[1..1]<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Det/DetGeneral<br><br><u>Description:</u> <br>Generic configuration parameters of the Det module.<br><br><u>Introduction:</u> <br>Not Defined.</span><input type="button" value="CLOSE" class="ParameterShowButtonSingle" />&nbsp; &nbsp;<img src="hintnotinput.png" style="display: inline" align="middle"/><table class="EcucParameterValue">
+<tr class="EcucParameter">
+<td class="ParamName">DetForwardToDlt&nbsp;&nbsp;[0..1]</td><td class="ParamType">EcucBooleanParamDef</td><td class="ParamInput"><form class="EcucParamInputBoolean" id="DetForwardToDlt" data-category="EcucBooleanParamDef" data-definition="/AUTOSAR/EcucDefs/Det/DetGeneral/DetForwardToDlt" data-lowermul="0" data-uppermul="0" data-defaultval="Not Defined." data-range="Not Defined." >
+<input type="radio" name="DetForwardToDlt" value="true" />TRUE<input type="radio" name="DetForwardToDlt" value="false" />FALSE</form><span class="ParamTooltip"><b>DetForwardToDlt</b>&nbsp;[0..1]<br><br><u>Category:</u><br>EcucBooleanParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Det/DetGeneral/DetForwardToDlt<br><br><u>Description:</u><br>Only if the parameter is present and set to true, the Det requires the Dlt interface and forwards it's call to the function Dlt_DetForwardErrorTrace. In this case the optional interface to Dlt_Det is required.<br><br><u>Introduction:</u><br>Not Defined.<br><br><u>Range:</u><br>Not Defined.<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td><td class="ParamControl"></td>
+</tr>
+<tr class="EcucParameter">
+<td class="ParamName">DetVersionInfoApi&nbsp;&nbsp;[1..1]</td><td class="ParamType">EcucBooleanParamDef</td><td class="ParamInput"><form class="EcucParamInputBoolean" id="DetVersionInfoApi" data-category="EcucBooleanParamDef" data-definition="/AUTOSAR/EcucDefs/Det/DetGeneral/DetVersionInfoApi" data-lowermul="1" data-uppermul="1" data-defaultval="Not Defined." data-range="Not Defined." >
+<input type="radio" name="DetVersionInfoApi" value="true" />TRUE<input type="radio" name="DetVersionInfoApi" value="false" />FALSE</form><span class="ParamTooltip"><b>DetVersionInfoApi</b>&nbsp;[1..1]<br><br><u>Category:</u><br>EcucBooleanParamDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Det/DetGeneral/DetVersionInfoApi<br><br><u>Description:</u><br>Pre-processor switch to enable / disable the API to read out the modules version information.<br><br><u>Introduction:</u><br>true: Version info API enabled.
+                                        false: Version info API disabled.<br><br><u>Range:</u><br>Not Defined.<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td><td class="ParamControl"></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="EcucContConfig hidden" id="DetNotification">DetNotification&nbsp; &nbsp;[0..1]&nbsp; &nbsp;<span class="ContConfigState">0</span><input type="button" value="OPEN" class="ConfigureShowButton" />
+<div class="EcucContainer hidden" id="DetNotification" data-formtype="defaultform" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/Det/DetNotification">DetNotification<input type="text" class="EcucContainerName" placeholder="Input shortName" value="" data-shortname="" data-category="EcucParamConfContainerDef" data-definition="/AUTOSAR/EcucDefs/Det/DetNotification"/><span class="ContainerTooltip"><b>DetNotification</b>&nbsp;[0..1]<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Det/DetNotification<br><br><u>Description:</u> <br>Configuration of the notification functions.<br><br><u>Introduction:</u> <br>Not Defined.</span><input type="button" value="CLOSE" class="ParameterShowButtonSingle" />&nbsp; &nbsp;<img src="hintnotinput.png" style="display: inline" align="middle"/><table class="EcucParameterValue">
+<tr class="EcucParameter">
+<td class="ParamName">DetErrorHook&nbsp;&nbsp;[0..*]</td><td class="ParamType">EcucFunctionNameDef</td><td class="ParamInput"><input type="text" class="EcucParamInputField" placeholder="Input Parameter Value" value="" id="DetErrorHook" data-category="EcucFunctionNameDef" data-definition="/AUTOSAR/EcucDefs/Det/DetNotification/DetErrorHook" data-lowermul="0" data-uppermul="0" data-defaultval="Not Defined." data-range="Not Defined." /><span class="ParamTooltip"><b>DetErrorHook</b>&nbsp;[0..*]<br><br><u>Category:</u><br>EcucFunctionNameDef<br><br><u>Definition:</u><br>/AUTOSAR/EcucDefs/Det/DetNotification/DetErrorHook<br><br><u>Description:</u><br>Optional list of functions to be called by the Development Error Tracer in context of each call of Det_ReportError.<br><br><u>Introduction:</u><br>The type of these functions shall be identical the type of Det_ReportError itself: Std_ReturnType (*f)(uint16, uint8, uint8, uint8).<br><br><u>Range:</u><br>Not Defined.<br><br><u>Default Value:</u><br>Not Defined.<br><br><u>Origin:</u><br>AUTOSAR_ECUC</span><img src="hintnotinput.png" style="display: inline" align="middle"/>Not Configured</td><td class="ParamControl"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="EcucController"><form id="Controller">
+<input type="button" class="HomeButton" value="HOME" onclick="location.href='AutoWhere_BswList.html'"/><br><input type="submit" class="SaveButton" value="SAVE"/>
+</form></div><div id="JsonResult"></div><script src="jquery-1.12.1.js"></script><script src="AutoWhere_EcucEditor.js"></script><script src="AutoWhere_EcucUserInput.js"></script></body>
+</html>
